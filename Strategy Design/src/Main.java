@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Strategy Design Pattern: Different Payment methods");
 
-        PaymentStrategy paymentStrategy = new DebitCard(); //Change this to cardDetails and check
+        PaymentStrategy paymentStrategy = new UPI(); //Change this to cardDetails and check
 
         Payment payment = new Payment(paymentStrategy);
 
