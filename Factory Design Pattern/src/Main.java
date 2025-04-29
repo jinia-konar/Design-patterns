@@ -3,7 +3,7 @@ import vehicles.Vehicle;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Factory Design Pattern: vehicles.Vehicle Factory");
-        VehicleFactory vehicleFactory = new VehicleFactory();
+        VehicleFactory vehicleFactory = VehicleFactory.getInstance();
         Vehicle myVehicle = vehicleFactory.getVehicle(VehicleType.BUS);
         myVehicle.drive();
     }
